@@ -5,9 +5,13 @@ document.querySelector('#vodka').addEventListener('click', executeVodka)
 
 const tempUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
 const fullDetails = "https://www.thecocktaildb.com/drink/"
-
+let vodkaCounter = 0;
 
 function executeVodka() {
+    if (vodkaCounter > 0) {
+        return;
+    }
+    vodkaCounter++;
     const url = tempUrl + 'vodka'
     fetch(url) 
     .then(res => res.json())
@@ -22,7 +26,10 @@ function executeVodka() {
             let temp = eachDrink.strDrink.split(' ').join('-');
             link.href = `${fullDetails}${eachDrink.idDrink}-${temp}`
             document.querySelector('#carousel').appendChild(link);
+
+            /* Creating image elements */
             const image = document.createElement('img');
+            image.id = "imageIndex" + index;
             image.src = eachDrink.strDrinkThumb;
             document.querySelector(`#${setID}`).appendChild(image);
 

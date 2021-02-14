@@ -1,6 +1,61 @@
+* {
+    box-sizing: border-box;
+}
 
-
+header, #input {
+    text-align: center;
+}
 
 a {
     text-decoration: none;
 }
+
+#carousel {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* white-space: nowrap; */
+    
+
+    /* position: relative; */
+    /*Animation*/
+    /* animation-name: carousel;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+}
+
+a {
+    width: 30%;
+}
+
+img {
+    width: 125%;
+}
+
+
+#imageIndex0 {
+    /* animation-name: mymove; */
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {transform: translateX(500px) }
+    to { transform: translateX(0)}
+    /* from { transform: translateX(0)}
+    to { transform: translateX(-200px)} */
+}
+
+/* Smartphone display parameters */
+
+
+/* @media (max-width: 550px) {
+    #carousel {
+        flex-direction: column;
+        align-content: center;
+        
+    }
+    img {
+        
+    }
+} */

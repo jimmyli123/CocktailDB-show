@@ -1,8 +1,6 @@
 
 document.querySelector('#vodka').addEventListener('click', executeVodka)
 
-// const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
-
 const tempUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
 const fullDetails = "https://www.thecocktaildb.com/drink/"
 let vodkaCounter = 0;
@@ -11,6 +9,10 @@ function executeVodka() {
     if (vodkaCounter > 0) {
         return;
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59
     vodkaCounter++;
     const url = tempUrl + 'vodka'
     fetch(url) 

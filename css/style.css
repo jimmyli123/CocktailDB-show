@@ -34,6 +34,7 @@ img {
 }
 
 
+<<<<<<< HEAD
 #imageIndex0 {
     /* animation-name: mymove; */
     animation: mymove 5s infinite;
@@ -45,11 +46,17 @@ img {
     /* from { transform: translateX(0)}
     to { transform: translateX(-200px)} */
 }
+=======
+>>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59
 
 /* Smartphone display parameters */
 
 
+<<<<<<< HEAD
 /* @media (max-width: 550px) {
+=======
+@media (max-width: 550px) {
+>>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59
     #carousel {
         flex-direction: column;
         align-content: center;
@@ -58,4 +65,8 @@ img {
     img {
         
     }
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59

@@ -9,10 +9,6 @@ function executeVodka() {
     if (vodkaCounter > 0) {
         return;
     }
-<<<<<<< HEAD
-=======
-    
->>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59
     vodkaCounter++;
     const url = tempUrl + 'vodka'
     fetch(url) 

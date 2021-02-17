@@ -11,9 +11,13 @@ a {
 }
 
 #carousel {
+    position: static;
     display: flex;
     width: 100%;
+    height: 300px;
     flex-direction: row;
+    align-items: center;
+    
     /* white-space: nowrap; */
     
 
@@ -26,37 +30,45 @@ a {
 }
 
 a {
-    width: 30%;
+    border: 3px red solid;
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
 }
 
 img {
-    width: 125%;
+    width: 100%;
+    border: 3px blue solid;
+    
 }
 
 
-<<<<<<< HEAD
 #imageIndex0 {
     /* animation-name: mymove; */
-    animation: mymove 5s infinite;
+    /* position: absolute; */
+    animation: mymove 6s linear infinite;
+    overflow: hidden;
+}
+#imageIndex1 {
+    animation: mymove 6s linear infinite;
+}
+
+#imageIndex2 {
+    animation: mymove 6s linear infinite;
 }
 
 @keyframes mymove {
-    from {transform: translateX(500px) }
-    to { transform: translateX(0)}
+    from {transform: translateX(0) }
+    to { transform: translateX(-1500px)}
     /* from { transform: translateX(0)}
     to { transform: translateX(-200px)} */
 }
-=======
->>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59
 
 /* Smartphone display parameters */
 
 
-<<<<<<< HEAD
 /* @media (max-width: 550px) {
-=======
-@media (max-width: 550px) {
->>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59
     #carousel {
         flex-direction: column;
         align-content: center;
@@ -65,8 +77,4 @@ img {
     img {
         
     }
-<<<<<<< HEAD
 } */
-=======
-}
->>>>>>> 109e61872d3dc6c8dde9eee84c92d08e27597e59

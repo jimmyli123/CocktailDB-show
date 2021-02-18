@@ -5,11 +5,13 @@ const tempUrl = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s="
 const fullDetails = "https://www.thecocktaildb.com/drink/"
 let vodkaCounter = 0;
 
-function executeVodka() {
+function executeVodka(idSource) {
     if (vodkaCounter > 0) {
         return;
     }
     vodkaCounter++;
+    console.log(idSource);
+    // console.log(idSource.srcElement);
     const url = tempUrl + 'vodka'
     fetch(url) 
     .then(res => res.json())
@@ -28,6 +30,7 @@ function executeVodka() {
             /* Creating image elements */
             const image = document.createElement('img');
             image.id = "imageIndex" + index;
+            image.classList.add("drinkImage");
             image.src = eachDrink.strDrinkThumb;
             document.querySelector(`#${setID}`).appendChild(image);
 

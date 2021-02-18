@@ -30,7 +30,7 @@ a {
 }
 
 a {
-    border: 3px red solid;
+    /* border: 3px red solid; */
     width: 200px;
     margin-left: 5px;
     margin-right: 5px;
@@ -39,14 +39,13 @@ a {
 
 img {
     width: 100%;
-    border: 3px blue solid;
+    /* border: 3px blue solid; */
     
 }
 
 
-#imageIndex0 {
-    /* animation-name: mymove; */
-    /* position: absolute; */
+/* #imageIndex0 {
+
     animation: mymove 6s linear infinite;
     overflow: hidden;
 }
@@ -56,6 +55,10 @@ img {
 
 #imageIndex2 {
     animation: mymove 6s linear infinite;
+} */
+
+.drinkImage { 
+    animation: mymove 5s linear infinite;
 }
 
 @keyframes mymove {

@@ -6,8 +6,17 @@ header, #input {
     text-align: center;
 }
 
+
 a {
     text-decoration: none;
+}
+
+#intro {
+    background-image: url("cocktail3.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 567px; */
+    padding: 15px 15px;
+
 }
 
 #carousel {
@@ -18,15 +27,17 @@ a {
     flex-direction: row;
     align-items: center;
     
-    /* white-space: nowrap; */
     
+}
 
-    /* position: relative; */
-    /*Animation*/
-    /* animation-name: carousel;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; */
+#filler {
+    height: 400px;
+    background-image:url("cocktail4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    
+    /* background-position: center ; */
 }
 
 a {
@@ -38,7 +49,7 @@ a {
 }
 
 img {
-    width: 100%;
+    width: 200px;
     /* border: 3px blue solid; */
     
 }
@@ -58,7 +69,7 @@ img {
 } */
 
 .drinkImage { 
-    animation: mymove 5s linear infinite;
+    animation: mymove 8s linear infinite;
 }
 
 @keyframes mymove {
